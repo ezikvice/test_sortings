@@ -6,6 +6,13 @@
  * To change this template use File | Settings | File Templates.
  */
 public abstract class Sorter {
+    int current; // текущий элемент, который будем сравнивать
+    int comp_with; // элемент, с которым сравниваем
+
     abstract public void sort (int[] arr);
+    public void showArray(int[] arr){
+
+    }
+
 }
 
