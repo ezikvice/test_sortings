@@ -10,9 +10,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("test");
 
-        final int ARR_LENGTH = 100;
+        final int ARR_LENGTH = 10;
         int[] intArray = new int[ARR_LENGTH];
         for(int i = 0; i< ARR_LENGTH; i++){
 
@@ -24,12 +23,12 @@ public class Main {
         System.out.println();
         System.out.println("Длина " + intArray.length);
 
-        Sorter sort = new SimpleSorter();
-        sort.sort(intArray);
+        Sorter sort = new SimpleSorter(intArray);
+        sort.sort(true);
         System.out.println();
 
-        Sorter qsort = new QuickSorter();
-        qsort.sort(intArray);
+//        Sorter qsort = new QuickSorter(intArray);
+//        qsort.sort(true);
 
     }
 
